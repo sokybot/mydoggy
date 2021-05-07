@@ -516,8 +516,11 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
                         }
                     }
                     firstPreview = false;
-                } else if (representativeAnchorDescriptor.isPreviewEnabled() &&
-                           descriptor.getManager().getToolWindowManagerDescriptor().isPreviewEnabled()) {
+                } else if (
+                        representativeAnchorDescriptor!=null 
+                        && descriptor!=null 
+                        && representativeAnchorDescriptor.isPreviewEnabled() 
+                        && descriptor.getManager().getToolWindowManagerDescriptor().isPreviewEnabled()) {
                     Container contentContainer = descriptor.getToolWindowPanel();
 
                     // Show Preview

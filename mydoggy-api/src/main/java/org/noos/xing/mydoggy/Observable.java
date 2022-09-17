@@ -5,8 +5,8 @@ import java.beans.PropertyChangeListener;
 /**
  * This interface contains generic methods concerning {@link java.beans.PropertyChangeListener}s.
  * Implementors gain ability to be observed, which means they can add, remove or get the list
- * of {@link java.beans.PropertyChangeListener]s currently registered.
- *
+ * of {@link java.beans.PropertyChangeListener}s currently registered.
+ * 
  * @author David DOLCIMASCOLO
  * @version 1.0 5 nov. 2007 11:40:15
  * @since 1.4.0
@@ -26,7 +26,7 @@ public interface Observable {
 
     /**
      * Removes a PropertyChangeListener from the listener list.
-     * <p/>
+     * <br>
      * If listener is null, no exception is thrown and no action is performed.
      *
      * @param listener the PropertyChangeListener to be removed.

@@ -318,7 +318,7 @@ public class MyDoggyResourceManager extends PropertyChangeEventSource implements
          * vpc
          */
         UIManager.addPropertyChangeListener(new PropertyChangeListener() {
-            @Override
+            //@Override
             public void propertyChange(PropertyChangeEvent evt) {
                 if ("lookAndFeel".equals(evt.getPropertyName())) {
                     onLookAndFeelChanged();

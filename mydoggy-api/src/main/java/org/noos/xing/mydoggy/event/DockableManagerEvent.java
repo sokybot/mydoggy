@@ -32,7 +32,7 @@ public class DockableManagerEvent extends EventObject {
     /**
      * Constructs a <code>DockableEvent</code> object with the
      * specified source, actionId and dockable.
-     * <p/>
+     * <br>
      * This constructor throws an
      * <code>IllegalArgumentException</code> if the <code>source</code> or the <code>actionId</code>
      * or the <code>dockable</code> are <code>null</code>.

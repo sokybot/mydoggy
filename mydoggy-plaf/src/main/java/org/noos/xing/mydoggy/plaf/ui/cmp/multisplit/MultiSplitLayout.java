@@ -42,14 +42,14 @@ import java.util.List;
  * among row/column siblings according to their 0.0 to 1.0 weight.
  * If no weights are specified then the last sibling always gets
  * all of the extra space, or space reduction.
- * <p/>
- * <p/>
+ * <br>
+ * <br>
  * Although MultiSplitLayout can be used with any Container, it's
  * the default layout manager for MultiSplitPanel.  MultiSplitPanel
  * supports interactively dragging the Dividers, accessibility,
  * and other features associated with split panes.
- * <p/>
- * <p/>
+ * <br>
+ * <br>
  * All properties in this class are bound: when a properties value
  * is changed, all PropertyChangeListeners are fired.
  *
@@ -67,7 +67,7 @@ public class MultiSplitLayout implements LayoutManager {
     /**
      * Create a MultiSplitLayout with a default model with a single
      * Leaf node named "default".
-     * <p/>
+     * <br>
      * #see setModel
      */
     public MultiSplitLayout() {
@@ -76,7 +76,7 @@ public class MultiSplitLayout implements LayoutManager {
 
     /**
      * Create a MultiSplitLayout with the specified model.
-     * <p/>
+     * <br>
      * #see setModel
      */
     public MultiSplitLayout(Node model) {
@@ -1476,7 +1476,7 @@ public class MultiSplitLayout implements LayoutManager {
      * name=<i>myLeafName</i> weight=<i>myLeafWeight</i>.
      * Similarly, a Split's weight can be specified with
      * weight=<i>mySplitWeight</i>.
-     * <p/>
+     * <br>
      * <p> For example, the following expression generates
      * a horizontal Split node with three children:
      * the Leafs named left and right, and a Divider in
@@ -1484,7 +1484,7 @@ public class MultiSplitLayout implements LayoutManager {
      * <pre>
      * (ROW (LEAF name=left) (LEAF name=right weight=1.0))
      * </pre>
-     * <p/>
+     * <br>
      * <p> Dividers should not be included in the string,
      * they're added automatcially as needed.  Because
      * Leaf nodes often only need to specify a name, one
@@ -1493,7 +1493,7 @@ public class MultiSplitLayout implements LayoutManager {
      * <pre>
      * (ROW left (LEAF name=right weight=1.0))
      * </pre>
-     * <p/>
+     * <br>
      * <p>Here's a more complex example.  One row with
      * three elements, the first and last of which are columns
      * with two leaves each:
@@ -1502,8 +1502,8 @@ public class MultiSplitLayout implements LayoutManager {
      *      (LEAF name=middle)
      *      (COLUMN weight=0.5 right.top right.bottom))
      * </pre>
-     * <p/>
-     * <p/>
+     * <br>
+     * <br>
      * <p> This syntax is not intended for archiving or
      * configuration files .  It's just a convenience for
      * examples and tests.

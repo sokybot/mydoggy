@@ -14,8 +14,8 @@ public interface MultiSplitContentUI extends TabbedContentUI {
      * Sets whether or not the ui must show a tab for all contents also
      * when there is just one content.
      *
-     * @param showAlwaysTab <tt>true</tt> if the ui must show a tab for all contents also
-     * when there is just one content, <tt>false</tt> otherwise
+     * @param showAlwaysTab <code>true</code> if the ui must show a tab for all contents also
+     * when there is just one content, <code>false</code> otherwise
      * @see #isShowAlwaysTab()
      * @since 1.4.1
      */

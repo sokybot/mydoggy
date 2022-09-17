@@ -65,11 +65,11 @@ public interface ResourceManager extends Observable {
 
     /**
      * Returns the icon to which this manager maps the specified id.  Returns
-     * <tt>null</tt> if the manager contains no mapping for this id.
+     * <code>null</code> if the manager contains no mapping for this id.
      *
      * @param id id whose associated icon is to be returned.
      * @return the icon to which this manager maps the specified id, or
-     *         <tt>null</tt> if the manager contains no mapping for this id.
+     *         <code>null</code> if the manager contains no mapping for this id.
      * @since 1.3.1
      */
     Icon getIcon(String id);
@@ -80,7 +80,7 @@ public interface ResourceManager extends Observable {
      *
      * @param id   id with which the specified icon is to be associated.
      * @param icon icon to be associated with the specified id.
-     * @return previous icon associated with specified id, or <tt>null</tt>
+     * @return previous icon associated with specified id, or <code>null</code>
      *         if there was no mapping for id.
      * @since 1.3.1
      */
@@ -88,11 +88,11 @@ public interface ResourceManager extends Observable {
 
     /**
      * Returns the color to which this manager maps the specified id.  Returns
-     * <tt>null</tt> if the manager contains no mapping for this id.
+     * <code>null</code> if the manager contains no mapping for this id.
      *
      * @param id id whose associated color is to be returned.
      * @return the color to which this manager maps the specified id, or
-     *         <tt>null</tt> if the manager contains no mapping for this id.
+     *         <code>null</code> if the manager contains no mapping for this id.
      * @since 1.3.1
      */
     Color getColor(String id);
@@ -103,7 +103,7 @@ public interface ResourceManager extends Observable {
      *
      * @param id    id with which the specified color is to be associated.
      * @param color color to be associated with the specified id.
-     * @return previous color associated with specified id, or <tt>null</tt>
+     * @return previous color associated with specified id, or <code>null</code>
      *         if there was no mapping for id.
      * @since 1.3.1
      */
@@ -129,11 +129,11 @@ public interface ResourceManager extends Observable {
 
     /**
      * Returns the buffered image to which this manager maps the specified id.  Returns
-     * <tt>null</tt> if the manager contains no mapping for this id.
+     * <code>null</code> if the manager contains no mapping for this id.
      *
      * @param id id whose associated buffered image is to be returned.
      * @return the buffered image to which this manager maps the specified id, or
-     *         <tt>null</tt> if the manager contains no mapping for this id.
+     *         <code>null</code> if the manager contains no mapping for this id.
      * @since 1.4.1
      */
     BufferedImage getImage(String id);
@@ -253,7 +253,7 @@ public interface ResourceManager extends Observable {
      *
      * @param name name with which the string form of value is to be associated.
      * @param value value whose string form is to be associated with key.
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>.
+     * @throws NullPointerException if <code>key</code> is <code>null</code>.
      * @see #getBoolean(String, boolean)
      * @since 1.4.2
      */
@@ -278,7 +278,7 @@ public interface ResourceManager extends Observable {
      *
      * @param name name with which the string form of value is to be associated.
      * @param value value whose string form is to be associated with key.
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>.
+     * @throws NullPointerException if <code>key</code> is <code>null</code>.
      * @see #getFloat(String, float)
      * @since 1.4.2
      */
@@ -303,7 +303,7 @@ public interface ResourceManager extends Observable {
      *
      * @param name name with which the string form of value is to be associated.
      * @param value value whose string form is to be associated with key.
-     * @throws NullPointerException if <tt>key</tt> is <tt>null</tt>.
+     * @throws NullPointerException if <code>key</code> is <code>null</code>.
      * @see #getInt(String, int)
      * @since 1.4.2
      */

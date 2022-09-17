@@ -573,7 +573,7 @@ toolWindowManager.removeToolWindowGroup("group_name");
 boolean contains = toolWindowManager.containsGroup("group_name");
 </source>
                 <p>
-                    Returns <tt>true</tt> if this manager contains a group for the specified name.
+                    Returns <code>true</code> if this manager contains a group for the specified name.
                 </p>
             </subsection>
 

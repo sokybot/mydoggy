@@ -48,11 +48,11 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
 
     /**
      * The method is used to set the available property of the tool.
-     * If <code>available</code> is <tt>true</tt> then tool becomes available in a way that depends on tool window type.
-     * If <code>available</code> is <tt>false</tt> then tool becomes not available in a way that depends on tool window
+     * If <code>available</code> is <code>true</code> then tool becomes available in a way that depends on tool window type.
+     * If <code>available</code> is <code>false</code> then tool becomes not available in a way that depends on tool window
      * type.
      *
-     * @param available <tt>true</tt> to make the tool available, <tt>false</tt> to make the tool not available.
+     * @param available <code>true</code> to make the tool available, <code>false</code> to make the tool not available.
      * @see #isAvailable()
      * @see #setVisible(boolean)
      * @since 1.0.0
@@ -60,9 +60,9 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
     void setAvailable(boolean available);
 
     /**
-     * Returns <tt>true</tt> is the tool is available.
+     * Returns <code>true</code> is the tool is available.
      *
-     * @return <tt>true</tt> is the tool is available, false otherwise.
+     * @return <code>true</code> is the tool is available, false otherwise.
      * @see #setAvailable(boolean)
      * @since 1.0.0
      */
@@ -70,21 +70,21 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
 
     /**
      * The method is used to set the visible property of the tool.
-     * If <code>visible</code> is <tt>true</tt> then tool becomes available if not already was.
+     * If <code>visible</code> is <code>true</code> then tool becomes available if not already was.
      * Moreover the tool shows the component in a way that depends on tool window type and becomes visible.
-     * If <code>visible</code> is <tt>false</tt> then tool becomes not available if not already was.
+     * If <code>visible</code> is <code>false</code> then tool becomes not available if not already was.
      * Moreover the tool hides the component in a way that depends on tool window type and becomes not visible.
      *
-     * @param visible <tt>true</tt> to make the tool visible, <tt>false</tt> to make the tool not visible.
+     * @param visible <code>true</code> to make the tool visible, <code>false</code> to make the tool not visible.
      * @see #isVisible()
      * @since 1.0.0
      */
     void setVisible(boolean visible);
 
     /**
-     * Returns <tt>true</tt> is the tool is visible.
+     * Returns <code>true</code> is the tool is visible.
      *
-     * @return <tt>true</tt> is the tool is vixible, false otherwise.
+     * @return <code>true</code> is the tool is vixible, false otherwise.
      * @see #setVisible(boolean)
      * @since 1.0.0
      */
@@ -131,14 +131,14 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
 
     /**
      * The method is used to set the aggregateEnabled property of the tool.
-     * If <code>aggregateEnabled</code> is <tt>true</tt> then every call to
+     * If <code>aggregateEnabled</code> is <code>true</code> then every call to
      * <code>setVisible(true)</code> will have the same behaviout of a call to <code>aggregate()</code>
      * method.
      * <br>
      * Default value is false.
      *
-     * @param aggregateEnabled <tt>true</tt> to translate every call to <code>setVisible(true)</code>
-     *                         to a call to <code>aggregate()</code> method, <tt>false</tt> to disable the translation.
+     * @param aggregateEnabled <code>true</code> to translate every call to <code>setVisible(true)</code>
+     *                         to a call to <code>aggregate()</code> method, <code>false</code> to disable the translation.
      * @see #isAggregateMode()
      * @since 1.3.0
      */
@@ -155,12 +155,12 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
 
     /**
      * The method is used to set the active property of the tool.
-     * If <code>active</code> is <tt>true</tt> then tool becomes available and visibile if not already was.
+     * If <code>active</code> is <code>true</code> then tool becomes available and visibile if not already was.
      * Moreover the tool grabs the focus from focus owner and becomes active.
-     * If <code>active</code> is <tt>false</tt> then the focus is passed to another component outer the tool and tool
+     * If <code>active</code> is <code>false</code> then the focus is passed to another component outer the tool and tool
      * becomes not active.
      *
-     * @param active <tt>true</tt> to make the tool active, <tt>false</tt> to deactivate the tool.
+     * @param active <code>true</code> to make the tool active, <code>false</code> to deactivate the tool.
      * @see #setAvailable(boolean)
      * @see #setVisible(boolean)
      * @since 1.0.0
@@ -168,9 +168,9 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
     void setActive(boolean active);
 
     /**
-     * Returns <tt>true</tt> is the tool is active.
+     * Returns <code>true</code> is the tool is active.
      *
-     * @return <tt>true</tt> is the tool is active, false otherwise.
+     * @return <code>true</code> is the tool is active, false otherwise.
      * @see #setActive(boolean)
      * @since 1.0.0
      */
@@ -322,7 +322,7 @@ public interface ToolWindow extends Dockable<ToolWindowManager>, DockableManager
      * Removes the specified tab from this toolwindow.
      *
      * @param toolWindowTab the tab to be removed
-     * @return <tt>true</tt> if this toolwindow contained the specified tab.
+     * @return <code>true</code> if this toolwindow contained the specified tab.
      * @see #addToolWindowTab(String, java.awt.Component)
      * @since 1.3.0
      */

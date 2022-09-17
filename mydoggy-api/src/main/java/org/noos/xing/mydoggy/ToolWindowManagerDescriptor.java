@@ -63,7 +63,7 @@ public interface ToolWindowManagerDescriptor extends Observable {
     /**
      * Enable or disable toolwindow index shortcuts.
      *
-     * @param numberingEnabled <tt>true</tt> to enabled toolwindow index shortcuts, <tt>false</tt> to disable..
+     * @param numberingEnabled <code>true</code> to enabled toolwindow index shortcuts, <code>false</code> to disable..
      * @see org.noos.xing.mydoggy.ToolWindow#setIndex(int)
      * @see #isNumberingEnabled()
      * @since 1.3.1
@@ -73,7 +73,7 @@ public interface ToolWindowManagerDescriptor extends Observable {
     /**
      * Returns the activation status of the toolwindow index shortcuts.
      *
-     * @return <tt>true</tt> is the toolwindow index shortcuts are enabled, <tt>false</tt> otherwise.
+     * @return <code>true</code> is the toolwindow index shortcuts are enabled, <code>false</code> otherwise.
      * @see #setNumberingEnabled(boolean)
      * @since 1.3.1
      */
@@ -82,15 +82,15 @@ public interface ToolWindowManagerDescriptor extends Observable {
     /**
      * Enables or disables tool window previews.
      *
-     * @param previewEnabled <tt>true</tt> to enable previews, <tt>false</tt> otherwise.
+     * @param previewEnabled <code>true</code> to enable previews, <code>false</code> otherwise.
      * @since 1.4.0
      */
     void setPreviewEnabled(boolean previewEnabled);
 
     /**
-     * Returns <tt>true</tt> if previews are enabled, <tt>false</tt> otherwise.
+     * Returns <code>true</code> if previews are enabled, <code>false</code> otherwise.
      *
-     * @return <tt>true</tt> if previews are enabled, <tt>false</tt> otherwise.
+     * @return <code>true</code> if previews are enabled, <code>false</code> otherwise.
      * @since 1.4.0
      */
     boolean isPreviewEnabled();
@@ -98,8 +98,8 @@ public interface ToolWindowManagerDescriptor extends Observable {
     /**
      * Sets whether or not the representative anchor buttons for unavailable tools are to be shown.
      *
-     * @param showUnavailableTools <tt>true</tt> if you want to show the representative anchor buttons
-     * for unavailable tools, <tt>false</tt> otherwise.
+     * @param showUnavailableTools <code>true</code> if you want to show the representative anchor buttons
+     * for unavailable tools, <code>false</code> otherwise.
      * @since 1.4.1
      * @see #isShowUnavailableTools()
      */
@@ -108,8 +108,8 @@ public interface ToolWindowManagerDescriptor extends Observable {
     /**
      * Returns the value of the property "showUnavailableTools"
      *
-     * @return <tt>true</tt> if the representative anchor buttons
-     * for unavailable tools are shown, <tt>false</tt> otherwise.
+     * @return <code>true</code> if the representative anchor buttons
+     * for unavailable tools are shown, <code>false</code> otherwise.
      * @since 1.4.1
      * @see #setShowUnavailableTools(boolean) 
      */

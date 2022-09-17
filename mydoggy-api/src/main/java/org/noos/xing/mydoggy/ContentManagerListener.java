@@ -8,7 +8,7 @@ import java.util.EventListener;
 /**
  * The listener interface for receiving "interesting" events
  * (content added, content removed) on the content manager.
- * <p/>
+ * <br>
  * The listener object created is then registered with the
  * content manager using the <code>addContentManagerListener</code>
  * method.

@@ -7,7 +7,7 @@ import java.util.EventListener;
 /**
  * The listener interface for receiving "interesting" events
  * (shown, hidden, tool added, tool removed) on a tool window group.
- * <p/>
+ * <br>
  * The listener object created is then registered with a
  * tool window group using the groups's <code>addToolWindowGroupListener</code>
  * method.

@@ -7,7 +7,7 @@ import java.util.EventListener;
 /**
  * The listener interface for receiving "interesting" events
  * (content removing, content detached) on the content manager ui.
- * <p/>
+ * <br>
  * The listener object created is then registered with the
  * content manager ui using the <code>addContentManagerUIListener</code>
  * method.

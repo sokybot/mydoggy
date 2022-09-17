@@ -1,0 +1,17 @@
+[33mcommit 3f14020ace90196506a3a8902281800b0f73361a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: thevpc <taha.bensalah@gmail.com>
+Date:   Mon May 31 14:45:55 2021 +0100
+
+    incremental update
+
+[33mcommit 55e5a0d64475257935893995376b995320ae01bb[m
+Author: thevpc <taha.bensalah@gmail.com>
+Date:   Fri May 7 04:15:45 2021 +0100
+
+    FIXED: null pointer exception
+
+[33mcommit a142755543df9c6ab6ca1d3378542b3fc7982ce9[m
+Author: thevpc <taha.bensalah@gmail.com>
+Date:   Sun Apr 4 19:07:02 2021 +0100
+
+    Initial push

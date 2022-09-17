@@ -106,7 +106,7 @@ public interface ContentManager extends DockableManager<Content>, Observable {
      * Removes the content <code>content</code>.
      *
      * @param content content to be removed from this manager, if present.
-     * @return <tt>true</tt> if this manager contained the specified element.
+     * @return <code>true</code> if this manager contained the specified element.
      * @see #addContent(String, String,javax.swing.Icon,java.awt.Component)
      * @see #addContent(String, String,javax.swing.Icon,java.awt.Component, String)
      * @since 1.0.0
@@ -117,7 +117,7 @@ public interface ContentManager extends DockableManager<Content>, Observable {
      * Removes the content at the specified position in this manager
      *
      * @param index the index of the element to removed.
-     * @return <tt>true</tt> if this manager contained the specified element.
+     * @return <code>true</code> if this manager contained the specified element.
      * @throws IndexOutOfBoundsException if the index is out of range (index &lt; 0 || index &gt;= getContentCount()).
      * @since 1.0.0
      */
@@ -153,11 +153,11 @@ public interface ContentManager extends DockableManager<Content>, Observable {
 
     /**
      * Returns the content to which this manager maps the specified key (the key could be the id or
-     * an alias). Returns <tt>null</tt> if the manager contains no mapping for this key.
+     * an alias). Returns <code>null</code> if the manager contains no mapping for this key.
      *
      * @param key key whose associated content is to be returned.
      * @return the content to which this manager maps the specified key
-     * @throws NullPointerException if the key is <tt>null</tt>.
+     * @throws NullPointerException if the key is <code>null</code>.
      * @since 1.0.0
      */
     Content getContent(Object key);
@@ -221,7 +221,7 @@ public interface ContentManager extends DockableManager<Content>, Observable {
      * Enables or disables the content manager. If the content manager is disable the whole space
      * will be available for toolwindows.
      *
-     * @param enabled <tt>true</tt> to enable the content manager, <tt>false</tt> otherwise.
+     * @param enabled <code>true</code> to enable the content manager, <code>false</code> otherwise.
      * @since 1.4.2
      */
     void setEnabled(boolean enabled);
@@ -229,7 +229,7 @@ public interface ContentManager extends DockableManager<Content>, Observable {
     /**
      * Returns if the content manager is enabled.
      *
-     * @return <tt>true</tt> if the content manager is enabled, <tt>false</tt> otherwise.
+     * @return <code>true</code> if the content manager is enabled, <code>false</code> otherwise.
      */
     boolean isEnabled();
 

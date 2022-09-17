@@ -27,15 +27,15 @@ public interface RepresentativeAnchorDescriptor<D extends Dockable> extends Obse
      * Enable or disable the representative anchor button. The method throw an exception when it is called
      * on a tool whose type is FLOATING_FREE.
      *
-     * @param visible <tt>true</tt> to enable make visible the representative anchor button, false otherwise.
+     * @param visible <code>true</code> to enable make visible the representative anchor button, false otherwise.
      * @since 1.5.0
      */
     void setVisible(boolean visible);
 
     /**
-     * Returns <tt>true</tt> if the representative anchor button is visible, <tt>false</tt> otherwise.
+     * Returns <code>true</code> if the representative anchor button is visible, <code>false</code> otherwise.
      *
-     * @return <tt>true</tt> if the representative anchor button is visible, <tt>false</tt> otherwise.
+     * @return <code>true</code> if the representative anchor button is visible, <code>false</code> otherwise.
      * @since 1.5.0
      */
     boolean isVisible();

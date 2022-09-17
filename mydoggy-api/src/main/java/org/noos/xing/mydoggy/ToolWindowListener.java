@@ -7,7 +7,7 @@ import java.util.EventListener;
 /**
  * The listener interface for receiving "interesting" events
  * (tab added, removed and removing).
- * <p/>
+ * <br>
  * The listener object created is then registered with a
  * tool window using the <code>addToolWindowListener</code> method.
  *

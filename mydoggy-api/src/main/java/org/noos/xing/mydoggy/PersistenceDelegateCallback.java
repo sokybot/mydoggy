@@ -27,11 +27,11 @@ public interface PersistenceDelegateCallback {
         String getName();
 
         /**
-         * Returns <tt>true</tt> if this node contains an attribute for the specified
+         * Returns <code>true</code> if this node contains an attribute for the specified
          * name.
          *
          * @param name attribute name whose presence in this node is to be tested.
-         * @return <tt>true</tt> if this node contains an attributed for the specified name.
+         * @return <code>true</code> if this node contains an attributed for the specified name.
          * @since 1.5.0
          */
         boolean containsAttribute(String name);

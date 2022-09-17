@@ -36,7 +36,7 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 
 /**
- * <p/>
+ * <br>
  * All properties in this class are bound: when a properties value
  * is changed, all PropertyChangeListeners are fired.
  *
@@ -219,7 +219,7 @@ public class MultiSplitPanel extends JPanel {
      * overlaps the clip Rectangle.  This is done after the call to
      * <code>super.paintChildren()</code> so that Dividers can be
      * rendered "on top of" the children.
-     * <p/>
+     * <br>
      * {@inheritDoc}
      */
     protected void paintChildren(Graphics g) {

@@ -45,7 +45,7 @@ public class ToolWindowGroupEvent extends EventObject {
     /**
      * Constructs a <code>ToolWindowGroupEvent</code> object with the
      * specified source tool window manager, actionId, toolWindowGroup.
-     * <p/>
+     * <br>
      * This constructor throws an
      * <code>IllegalArgumentException</code> if the <code>source</code> or the <code>toolWindowGroup</code>
      * or the <code>actionId</code> is <code>null</code>.
@@ -72,7 +72,7 @@ public class ToolWindowGroupEvent extends EventObject {
     /**
      * Constructs a <code>ToolWindowGroupEvent</code> object with the
      * specified source tool window manager, actionId, toolWindowGroup, toolWindow.
-     * <p/>
+     * <br>
      * This constructor throws an
      * <code>IllegalArgumentException</code> if the <code>source</code> or the <code>toolWindowGroup</code>
      * or the <code>actionId</code> is <code>null</code>.

@@ -134,7 +134,7 @@ public interface Content extends Dockable<ContentManager> {
      * Sets the keyboard mnemonic for accessing this content.
      * The mnemonic is the key which when combined with the look and feel's
      * mouseless modifier (usually Alt) will activate this content by selecting it.
-     * <p/>
+     * <br>
      * A mnemonic must correspond to a single key on the keyboard
      * and should be specified using one of the <code>VK_XXX</code>
      * keycodes defined in <code>java.awt.event.KeyEvent</code>.

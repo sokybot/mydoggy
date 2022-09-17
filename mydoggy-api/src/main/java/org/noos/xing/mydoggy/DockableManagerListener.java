@@ -7,7 +7,7 @@ import java.util.EventListener;
 /**
  * The listener interface for receiving "interesting" events
  * (dockable added, removed) on the dockable manager.
- * <p/>
+ * <br>
  * The listener object created is then registered with the
  * manager using the <code>addDockableManagerListener</code>
  * method.

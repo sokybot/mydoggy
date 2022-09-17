@@ -34,7 +34,7 @@ public interface ToolWindowGroup {
      * Removes the occurrence in this group of the specified tool window.
      *
      * @param toolWindow tool window to be removed from this group, if present.
-     * @return <tt>true</tt> if this group contained the specified tool window.
+     * @return <code>true</code> if this group contained the specified tool window.
      * @throws NullPointerException if the specified element is null.
      * @since 1.0.0
      */
@@ -50,10 +50,10 @@ public interface ToolWindowGroup {
     ToolWindow[] getToolsWindow();
 
     /**
-     * Returns <tt>true</tt> if this group contains the specified tool window.
+     * Returns <code>true</code> if this group contains the specified tool window.
      *
      * @param toolWindow tool window whose presence in this group is to be tested.
-     * @return <tt>true</tt> if this group contains the specified element.
+     * @return <code>true</code> if this group contains the specified element.
      * @throws NullPointerException if the specified element is null.
      * @since 1.0.0
      */
@@ -61,20 +61,20 @@ public interface ToolWindowGroup {
 
     /**
      * The method is used to set the implicit property of the group.
-     * If <code>implicit</code> is <tt>true</tt> then if a tool in this group is made visible then
+     * If <code>implicit</code> is <code>true</code> then if a tool in this group is made visible then
      * all tools in this group will be make visible.
      * <br>
      * Default value is false.
      *
-     * @param implicit <tt>true</tt> to enable, <tt>false</tt> otherwise.
+     * @param implicit <code>true</code> to enable, <code>false</code> otherwise.
      * @since 1.3.0
      */
     void setImplicit(boolean implicit);
 
     /**
-     * Returns <tt>true</tt> if this is an implicit group, <tt>false</tt> otherwise.
+     * Returns <code>true</code> if this is an implicit group, <code>false</code> otherwise.
      *
-     * @return <tt>true</tt> if this is an implicit group, <tt>false</tt> otherwise.
+     * @return <code>true</code> if this is an implicit group, <code>false</code> otherwise.
      * @since 1.3.0
      */
     boolean isImplicit();

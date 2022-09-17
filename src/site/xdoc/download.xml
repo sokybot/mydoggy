@@ -107,23 +107,23 @@
             <subsection name="Usage">
                 <ol type="1">
                     <li>Unzip
-                        <tt><font style="color:green">mydoggy-1.5.0.zip</font></tt>
+                        <code><font style="color:green">mydoggy-1.5.0.zip</font></code>
                         to the directory you wish to unzip it.
                     </li>
                     <li>To use MyDoggy add to your classpath
                         <ol type="1">
                             <li>
-                                <font style="color:red"><tt>mydoggy_1.5.0-api.jar</tt></font>,
+                                <font style="color:red"><code>mydoggy_1.5.0-api.jar</code></font>,
                             </li>
                             <li>
-                                <font style="color:red"><tt>mydoggy_1.5.0-plaf.jar</tt></font>,
+                                <font style="color:red"><code>mydoggy_1.5.0-plaf.jar</code></font>,
                             </li>
                             <li>
-                                <font style="color:red"><tt>mydoggy_1.5.0-res.jar</tt></font>
+                                <font style="color:red"><code>mydoggy_1.5.0-res.jar</code></font>
                                 and
                             </li>
                             <li>
-                                <font style="color:red"><tt>TableLayout-20020517.jar</tt></font>.
+                                <font style="color:red"><code>TableLayout-20020517.jar</code></font>.
                             </li>
                         </ol>
                     </li>

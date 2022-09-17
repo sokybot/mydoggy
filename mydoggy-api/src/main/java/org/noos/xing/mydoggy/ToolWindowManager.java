@@ -83,11 +83,11 @@ public interface ToolWindowManager extends DockableManager<ToolWindow> {
 
     /**
      * Returns the toolWindow to which this manager maps the specified alias.  Returns
-     * <tt>null</tt> if the manager contains no mapping for this alias.
+     * <code>null</code> if the manager contains no mapping for this alias.
      *
      * @param alias alias whose associated toolWindow is to be returned.
      * @return the toolWindow to which this manager maps the specified alias, or
-     *	       <tt>null</tt> if the manager contains no mapping for this alias.
+     *	       <code>null</code> if the manager contains no mapping for this alias.
      * @since 1.2.0
      * @deprecated use getToolWindow(Object) instead.
      */
@@ -96,18 +96,18 @@ public interface ToolWindowManager extends DockableManager<ToolWindow> {
     /**
      * Returns the id of currently active tool window.
      *
-     * @return <tt>ID</tt> of currently active tool window or <tt>null</tt> if there is no active tool window.
+     * @return <code>ID</code> of currently active tool window or <code>null</code> if there is no active tool window.
      * @since 1.0.0
      */
     Object getActiveToolWindowId();
 
     /**
      * Returns the tool window to which this manager maps the specified key (the key could be the id or
-     * an alias). Returns <tt>null</tt> if the manager contains no mapping for this id.
+     * an alias). Returns <code>null</code> if the manager contains no mapping for this id.
      *
      * @param key the key could be the id or an alias
      * @return the tool window to which this manager maps the specified key. If there is no registered tool
-     *         then the method returns <tt>null</tt>.
+     *         then the method returns <code>null</code>.
      * @since 1.0.0
      */
     ToolWindow getToolWindow(Object key);
@@ -194,10 +194,10 @@ public interface ToolWindowManager extends DockableManager<ToolWindow> {
     boolean removeToolWindowGroup(ToolWindowGroup toolWindowGroup);
 
     /**
-     * Returns <tt>true</tt> if this manager contains a group for the specified name.
+     * Returns <code>true</code> if this manager contains a group for the specified name.
      *
      * @param name name whose presence in this manager is to be tested.
-     * @return <tt>true</tt> if this manager contains a group for the specified name.
+     * @return <code>true</code> if this manager contains a group for the specified name.
      * @since 1.0.0
      */
     boolean containsGroup(String name);
@@ -205,11 +205,11 @@ public interface ToolWindowManager extends DockableManager<ToolWindow> {
     /**
      * Returns the dockable to which a dockable manager (this manager, the content manager or a toolwindow)
      * maps the specified id.
-     * Returns <tt>null</tt> if the no manager contains a mapping for this id.
+     * Returns <code>null</code> if the no manager contains a mapping for this id.
      *
      * @param key dockable's id or alias.
      * @return registered dockable with specified id. If there is no registered
-     *         dockable with specified id then the method returns <tt>null</tt>.
+     *         dockable with specified id then the method returns <code>null</code>.
      * @see org.noos.xing.mydoggy.Dockable
      * @since 1.5.0
      */

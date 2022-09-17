@@ -35,9 +35,9 @@ public interface PlafContentManagerUI {
     void uninstall();
 
     /**
-     * Returns <tt>true</tt> is the manager is installed, <tt>false</tt> otherwise.
+     * Returns <code>true</code> is the manager is installed, <code>false</code> otherwise.
      * 
-     * @return <tt>true</tt> is the manager is installed, <tt>false</tt> otherwise.
+     * @return <code>true</code> is the manager is installed, <code>false</code> otherwise.
      * @since 1.3.1
      */
     boolean isInstalled();

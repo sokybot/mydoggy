@@ -41,7 +41,7 @@ public class ContentManagerEvent extends EventObject {
      * specified source content manager, actionId, content.
      * Creating an invalid event (such as by using ActionId.ADD_CONTENT with a null content)
      * results in unspecified behavior.
-     * <p/>
+     * <br>
      * This method throws an
      * <code>IllegalArgumentException</code> if <code>source</code>
      * is <code>null</code>.

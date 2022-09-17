@@ -9,9 +9,9 @@ import java.awt.*;
 public interface TransparencyManager<E extends Component> {
 
     /**
-     * Returns <tt>true</tt> if the manager can manage the transparency, <tt>false</tt> otherwise. 
+     * Returns <code>true</code> if the manager can manage the transparency, <code>false</code> otherwise. 
      *
-     * @return <tt>true</tt> if the manager can manage the transparency, <tt>false</tt> otherwise.
+     * @return <code>true</code> if the manager can manage the transparency, <code>false</code> otherwise.
      */
     boolean isServiceAvailable();
 
@@ -24,11 +24,11 @@ public interface TransparencyManager<E extends Component> {
     void setAlphaModeRatio(E component, float transparency);
 
     /**
-     * Returns <tt>true</tt> if the transparency value of the <code>component</code> if higher than zero,
-     * <tt>false</tt> otherwise.
+     * Returns <code>true</code> if the transparency value of the <code>component</code> if higher than zero,
+     * <code>false</code> otherwise.
      * @param component the component for which retrieve the transparency value.
-     * @return <tt>true</tt> if the transparency value of the <code>component</code> if higher than zero,
-     * <tt>false</tt> otherwise.
+     * @return <code>true</code> if the transparency value of the <code>component</code> if higher than zero,
+     * <code>false</code> otherwise.
      */
     boolean isAlphaModeEnabled(E component);
 

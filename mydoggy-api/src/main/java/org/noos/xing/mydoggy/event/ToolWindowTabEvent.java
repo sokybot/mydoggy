@@ -39,7 +39,7 @@ public class ToolWindowTabEvent extends EventObject {
     /**
      * Constructs a <code>ToolWindowTabEvent</code> object with the
      * specified source, actionId, tool window and tab.
-     * <p/>
+     * <br>
      * This constructor throws an
      * <code>IllegalArgumentException</code> if the <code>source</code> or the <code>actionId</code>
      * or the <code>toolWindow</code> or the <code>toolWindowTab</code> is <code>null</code>.

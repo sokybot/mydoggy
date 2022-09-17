@@ -176,11 +176,11 @@ public interface ToolWindowTypeDescriptor extends Observable {
 
     /**
      * Returns the toolWindow action to which this descriptor maps the specified id. Returns
-     * <tt>null</tt> if the descriptor contains no mapping for this id.
+     * <code>null</code> if the descriptor contains no mapping for this id.
      *
      * @param id id whose associated toolWindow is to be returned.
      * @return the toolWindow action to which this descriptor maps the specified id. Returns
-     * <tt>null</tt> if the descriptor contains no mapping for this id.
+     * <code>null</code> if the descriptor contains no mapping for this id.
      * @since 1.5.0
      */
     ToolWindowAction getToolWindowAction(String id);

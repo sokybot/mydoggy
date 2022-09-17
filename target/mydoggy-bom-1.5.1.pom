@@ -1,0 +1,139 @@
+<!-- 22-Nov-2011 AYA : BDT 26587 update profile for the Jenkins build. -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>io.github.sokybot.mydoggy</groupId>
+	<artifactId>mydoggy-bom</artifactId>
+	<name>mydoggy-builder</name>
+	<version>1.5.1</version>
+	<packaging>pom</packaging>
+	
+	<description>
+	 
+	 A Bom file to keep track versions of  mydoggy modules and its dependencies ,
+	 and to provide central place to control general build properties of mydoggy library .
+	</description>
+	
+	<modules>
+		<module>mydoggy-api</module>
+		<module>mydoggy-plaf</module>
+		<module>mydoggy-res</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<plugin.gpg.version>1.5</plugin.gpg.version>
+		<plugin.source.version>2.2.1</plugin.source.version>
+		<plugin.javadoc.version>3.4.1</plugin.javadoc.version>
+		<module.api.version>1.5.1</module.api.version>
+		<module.plaf.version>1.5.1</module.plaf.version>
+		<module.res.version>1.5.1</module.res.version>
+		<dependency.junit.version>3.8.1</dependency.junit.version>
+	</properties>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>mydoggy-api</artifactId>
+				<version>${module.api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>mydoggy-plaf</artifactId>
+				<version>${module.plaf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>mydoggy-res</artifactId>
+				<version>${module.res.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${dependency.junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>${plugin.gpg.version}</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${plugin.source.version}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${plugin.javadoc.version}</version>
+				<configuration>
+					<additionalOptions>
+						<additionalparam>-Xdoclint:none</additionalparam>
+
+					</additionalOptions>
+				</configuration>
+
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+</project>

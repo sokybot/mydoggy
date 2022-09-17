@@ -170,11 +170,11 @@ public interface ContentUI extends DockableUI {
     void setDetachedBounds(Rectangle detachedBounds);
 
     /**
-     * When it sets to <tt>true</tt> then when the content is detached a button
+     * When it sets to <code>true</code> then when the content is detached a button
      * is added to the task bar of your operating system.
      *
-     * @param addToTaskBarWhenDetached <tt>true</tt> if to the content is associated a button
-     * into the task bar when it is detached, <tt>false</tt> otherwise.
+     * @param addToTaskBarWhenDetached <code>true</code> if to the content is associated a button
+     * into the task bar when it is detached, <code>false</code> otherwise.
      * @since 1.4.2
      */
     void setAddToTaskBarWhenDetached(boolean addToTaskBarWhenDetached);
@@ -182,8 +182,8 @@ public interface ContentUI extends DockableUI {
     /**
      * Returns the property value of "addToTaskBarWhenDetached".
      *
-     * @return <tt>true</tt> if to the content is associated a button
-     * into the task bar when it is detached, <tt>false</tt> otherwise. 
+     * @return <code>true</code> if to the content is associated a button
+     * into the task bar when it is detached, <code>false</code> otherwise. 
      * @since 1.4.2
      */
     boolean isAddToTaskBarWhenDetached();

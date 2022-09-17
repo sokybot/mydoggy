@@ -143,11 +143,11 @@ public interface FloatingTypeDescriptor extends ToolWindowTypeDescriptor {
     int getTransparentDelay();
 
     /**
-     * When it sets to <tt>true</tt> then when the toolwindow is in flaoting mode a button
+     * When it sets to <code>true</code> then when the toolwindow is in flaoting mode a button
      * is added to the task bar of your operating system.
      *
-     * @param addToTaskBar <tt>true</tt> if to the toolwindow is associated a button
-     *                     into the task bar when it is in floating mode, <tt>false</tt> otherwise.
+     * @param addToTaskBar <code>true</code> if to the toolwindow is associated a button
+     *                     into the task bar when it is in floating mode, <code>false</code> otherwise.
      * @since 1.4.2
      */
     void setAddToTaskBar(boolean addToTaskBar);
@@ -155,8 +155,8 @@ public interface FloatingTypeDescriptor extends ToolWindowTypeDescriptor {
     /**
      * Returns the property value of "addToTaskBarWhenDetached".
      *
-     * @return <tt>true</tt> if to the toolwindow is associated a button
-     *         into the task bar when it is in floating mode, <tt>false</tt> otherwise.
+     * @return <code>true</code> if to the toolwindow is associated a button
+     *         into the task bar when it is in floating mode, <code>false</code> otherwise.
      * @since 1.4.2
      */
     boolean isAddToTaskBar();
@@ -182,21 +182,21 @@ public interface FloatingTypeDescriptor extends ToolWindowTypeDescriptor {
     /**
      * Enables or disable the OS decoration.
      *
-     * @param osDecorated <tt>true</tt> to enabled the OS decoration, <tt>false</tt> otherwise.
+     * @param osDecorated <code>true</code> to enabled the OS decoration, <code>false</code> otherwise.
      * @since 1.5.0
      */
     void setOsDecorated(boolean osDecorated);
 
     /**
-     * Returns <tt>true</tt> if the OS decoration is used, <tt>false</tt> otherwise.
+     * Returns <code>true</code> if the OS decoration is used, <code>false</code> otherwise.
      *
-     * @return <tt>true</tt> if the OS decoration is used, <tt>false</tt> otherwise.
+     * @return <code>true</code> if the OS decoration is used, <code>false</code> otherwise.
      * @since 1.5.0
      */
     boolean isOsDecorated();
 
     /**
-     * When <tt>true</tt>, the floating window is not resizable by user mouse actions.
+     * When <code>true</code>, the floating window is not resizable by user mouse actions.
      *
      * @param resizable whether user resize is allowed
      * @since 1.5.0

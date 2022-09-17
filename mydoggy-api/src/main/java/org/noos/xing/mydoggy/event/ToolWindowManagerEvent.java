@@ -49,7 +49,7 @@ public class ToolWindowManagerEvent extends EventObject {
      * specified source tool window manager, actionId, toolWindow.
      * Creating an invalid event (such as by using ActionId.TOOL_REGISTERED with a null tool window)
      * results in unspecified behavior.
-     * <p/>
+     * <br>
      * This method throws an
      * <code>IllegalArgumentException</code> if <code>source</code>
      * is <code>null</code>.
@@ -72,7 +72,7 @@ public class ToolWindowManagerEvent extends EventObject {
      * specified source tool window manager, actionId, toolWindowGroup.
      * Creating an invalid event (such as by using ActionId.GROUP_ADDED with a null tool window group)
      * results in unspecified behavior.
-     * <p/>
+     * <br>
      * This method throws an
      * <code>IllegalArgumentException</code> if <code>source</code>
      * is <code>null</code>.

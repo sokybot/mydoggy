@@ -40,18 +40,19 @@
 			<timezone>+1</timezone>
 		</developer>
 	</developers>
+
 	<contributors>
 		<contributor>
 			<email>sokybot.project@gmail.com</email>
 			<name>amr mahmoud</name>
 
 		</contributor>
-	
+
 		<contributor>
 			<name>thevpc</name>
 			<email>taha.bensalah@gmail.com</email>
 		</contributor>
-	
+
 	</contributors>
 
 	<licenses>
@@ -60,7 +61,10 @@
 			<url>http://www.gnu.org/licenses/lgpl.txt</url>
 		</license>
 	</licenses>
-
+	<scm>
+		<connection>scm:git:https://github.com/sokybot/mydoggy.git</connection>
+		<url>https://github.com/sokybot/mydoggy</url>
+	</scm>
 	<modules>
 		<module>mydoggy-api</module>
 		<module>mydoggy-plaf</module>

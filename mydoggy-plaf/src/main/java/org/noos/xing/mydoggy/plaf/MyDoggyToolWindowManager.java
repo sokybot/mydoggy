@@ -24,7 +24,7 @@ import org.noos.xing.mydoggy.plaf.ui.content.ContentDescriptor;
 import org.noos.xing.mydoggy.plaf.ui.content.MyDoggyTabbedContentManagerUI;
 import org.noos.xing.mydoggy.plaf.ui.drag.ContentManagerDropTarget;
 import org.noos.xing.mydoggy.plaf.ui.drag.MyDoggyTransferable;
-import org.noos.xing.mydoggy.plaf.ui.look.MyDoggyResourceManager;
+import org.noos.xing.mydoggy.plaf.ui.resource.MyDoggyResourceManager;
 import org.noos.xing.mydoggy.plaf.ui.util.DockableManager2ToolWindowManagerWrapper;
 import org.noos.xing.mydoggy.plaf.ui.util.SourceFilterPropertyChangeListener;
 import org.noos.xing.mydoggy.plaf.ui.util.SwingUtil;

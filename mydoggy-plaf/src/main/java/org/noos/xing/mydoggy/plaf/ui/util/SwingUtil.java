@@ -18,6 +18,7 @@ import java.awt.dnd.DragSource;
 import java.awt.image.BufferedImage;
 import java.beans.PropertyChangeEvent;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -559,11 +560,14 @@ public class SwingUtil {
     }
 
     // System support methods
-
+ 
+    
     public static Properties loadPropertiesFile(String resourceName, ClassLoader classLoader) {
         InputStream is = null;
         try {
             URL resource = getUrl(classLoader, "META-INF/" + resourceName);
+            if(resource == null) resource =  getUrl(classLoader , resourceName)  ; 
+            
             if (resource == null) {
                 File file = new File(resourceName);
                 if (file.exists())
@@ -573,7 +577,8 @@ public class SwingUtil {
                     if (file.exists())
                         resource = file.toURI().toURL();
                     else
-                        throw new RuntimeException("Cannot find resource property file called " + resourceName + ".");
+                        throw new IllegalArgumentException("Cannot find resource property file called " + resourceName + ".");
+                    
                 }
             }
 

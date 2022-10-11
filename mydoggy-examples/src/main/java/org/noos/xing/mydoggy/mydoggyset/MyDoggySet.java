@@ -21,6 +21,8 @@ import org.noos.xing.mydoggy.plaf.ui.util.SwingUtil;
 import org.noos.xing.yasaf.plaf.action.ViewContextAction;
 import org.noos.xing.yasaf.view.ViewContext;
 
+import com.formdev.flatlaf.FlatDarkLaf;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -190,6 +192,8 @@ public class MyDoggySet {
 
 
     public static void main(String[] args) {
+    	
+    	UIManager.put(FlatDarkLaf.NAME, "com.formdev.flatlaf.FlatDarkLaf");
         final MyDoggySet test = new MyDoggySet();
         test.run(null);
     }

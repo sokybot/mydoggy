@@ -24,12 +24,12 @@
 			<version>1.5.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.soky.mydoggy</groupId>
+			<groupId>io.github.sokybot.mydoggy</groupId>
 			<artifactId>mydoggy-plaf</artifactId>
 			<version>1.5.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.soky.mydoggy</groupId>
+			<groupId>io.github.sokybot.mydoggy</groupId>
 			<artifactId>mydoggy-res</artifactId>
 			<version>1.5.1</version>
 		</dependency>
@@ -51,6 +51,13 @@
 			<artifactId>substance</artifactId>
 			<version>5.3</version>
 			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf</artifactId>
+			<version>2.3</version>
+
 		</dependency>
 	</dependencies>
 

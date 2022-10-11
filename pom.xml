@@ -9,7 +9,7 @@
 	<groupId>io.github.sokybot.mydoggy</groupId>
 	<artifactId>mydoggy-bom</artifactId>
 	<name>mydoggy-builder</name>
-	<version>1.5.1</version>
+	<version>1.5.2</version>
 	<packaging>pom</packaging>
 	<url>http://mydoggy.sourceforge.net</url>
 
@@ -79,9 +79,9 @@
 		<plugin.gpg.version>1.5</plugin.gpg.version>
 		<plugin.source.version>2.2.1</plugin.source.version>
 		<plugin.javadoc.version>3.4.1</plugin.javadoc.version>
-		<module.api.version>1.5.1</module.api.version>
-		<module.plaf.version>1.5.1</module.plaf.version>
-		<module.res.version>1.5.1</module.res.version>
+		<module.api.version>1.5.2</module.api.version>
+		<module.plaf.version>1.5.2</module.plaf.version>
+		<module.res.version>1.5.2</module.res.version>
 		<dependency.junit.version>3.8.1</dependency.junit.version>
 	</properties>
 

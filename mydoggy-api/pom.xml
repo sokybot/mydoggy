@@ -16,7 +16,7 @@
 	<parent>
 		<groupId>io.github.sokybot.mydoggy</groupId>
 		<artifactId>mydoggy-bom</artifactId>
-		<version>1.5.1</version>
+		<version>1.5.2</version>
 	</parent>
 
 

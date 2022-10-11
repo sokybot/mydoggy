@@ -12,6 +12,10 @@
         MyDoggy-Examples contains some examples to see MyDoggy in action.</description>
 
 
+	<properties>
+		<lib.version>1.5.2</lib.version>
+	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>tablelayout</groupId>
@@ -21,17 +25,17 @@
 		<dependency>
 			<groupId>io.github.sokybot.mydoggy</groupId>
 			<artifactId>mydoggy-api</artifactId>
-			<version>1.5.1</version>
+			<version>${lib.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.sokybot.mydoggy</groupId>
 			<artifactId>mydoggy-plaf</artifactId>
-			<version>1.5.1</version>
+			<version>${lib.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.sokybot.mydoggy</groupId>
 			<artifactId>mydoggy-res</artifactId>
-			<version>1.5.1</version>
+			<version>${lib.version}</version>
 		</dependency>
 
 		<dependency>
@@ -52,7 +56,7 @@
 			<version>5.3</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.formdev</groupId>
 			<artifactId>flatlaf</artifactId>

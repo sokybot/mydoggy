@@ -13,7 +13,7 @@ public class ImageResolver extends IPropertyResolver {
 	private IPropertyResolver next ; 
 	private ClassLoader classLoader ; 
 	
-	protected ImageResolver(IPropertyResolver resolver , ClassLoader uiClassLoader) {
+	public ImageResolver(IPropertyResolver resolver , ClassLoader uiClassLoader) {
 		this.next = resolver ; 
 		this.classLoader = uiClassLoader ; 
 		

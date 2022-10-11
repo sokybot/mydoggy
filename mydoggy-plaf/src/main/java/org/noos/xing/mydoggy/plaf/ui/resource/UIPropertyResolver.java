@@ -7,7 +7,7 @@ public class UIPropertyResolver extends IPropertyResolver {
 
 	private IPropertyResolver next ; 
 	
-	protected UIPropertyResolver(IPropertyResolver resolver) {
+	public UIPropertyResolver(IPropertyResolver resolver) {
 		this.next = resolver ; 
 	}
 	

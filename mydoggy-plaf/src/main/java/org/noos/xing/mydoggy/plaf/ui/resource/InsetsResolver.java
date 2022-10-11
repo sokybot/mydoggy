@@ -5,7 +5,6 @@ import java.awt.Insets;
 public class InsetsResolver extends IPropertyResolver {
 
 	
-	protected InsetsResolver() {} 
 	
 	@Override
 	public Object resolve(String value) {

@@ -8,7 +8,7 @@ public class RGBResolver extends IPropertyResolver {
 
 	private IPropertyResolver next;
 
-	protected RGBResolver(IPropertyResolver resolver) {
+	public RGBResolver(IPropertyResolver resolver) {
 		this.next = resolver;
 	}
 

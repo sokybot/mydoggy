@@ -21,6 +21,7 @@ import org.noos.xing.mydoggy.plaf.ui.util.RemoveNotifyDragListener;
 import org.noos.xing.mydoggy.plaf.ui.util.SwingUtil;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.event.MouseInputAdapter;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.metal.MetalLabelUI;
@@ -48,8 +49,10 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
 
     protected ToolWindowRepresentativeAnchor representativeAnchor;
 
-    protected LineBorder labelBorder;
-
+    protected Border labelBorder ; 
+    
+    protected LineBorder lineBorder;
+   
     protected ToolWindowDescriptor descriptor;
     protected ToolWindow toolWindow;
     protected RepresentativeAnchorDescriptor representativeAnchorDescriptor;
@@ -82,12 +85,12 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
             boolean visible = (Boolean) e.getNewValue();
             representativeAnchor.setOpaque(visible);
             if (visible) {
-                labelBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
+                lineBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
 
                 descriptor.getToolBar().ensureVisible(representativeAnchor);
                 toolWindow.setFlashing(false);
             } else
-                labelBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER));
+                lineBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER));
 
             SwingUtil.repaint(representativeAnchor);
         } else if ("flash".equals(propertyName)) {
@@ -232,8 +235,14 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
         this.flashingAnimBackEnd = new MutableColor(UIManager.getColor(MyDoggyKeySpace.TWRA_BACKGROUND_INACTIVE));
 
         // Basic settings
-        labelBorder = new LineBorder(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER), 1, true, 3, 3);
-
+        lineBorder = new LineBorder(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER), 1, true, 3, 3);
+        Insets paddingInsets = UIManager.getInsets(MyDoggyKeySpace.TWRA_PADDING) ; 
+       
+        Border padding = BorderFactory.createEmptyBorder(paddingInsets.top,
+        		paddingInsets.left, 
+        		paddingInsets.bottom,
+        		paddingInsets.right);
+        labelBorder = BorderFactory.createCompoundBorder(lineBorder, padding) ;
         c.setBorder(labelBorder);
         c.setForeground(UIManager.getColor(MyDoggyKeySpace.TWRA_FOREGROUND));
 
@@ -446,7 +455,7 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
             }
 
             representativeAnchor.setBorder(labelBorder);
-            labelBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
+            lineBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
             SwingUtil.repaint(representativeAnchor);
         }
 
@@ -468,7 +477,7 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
 
             Component source = e.getComponent();
             if (!source.isOpaque()) {
-                labelBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
+                lineBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_IN_BORDER));
                 SwingUtil.repaint(source);
             }
         }
@@ -489,7 +498,7 @@ public class ToolWindowRepresentativeAnchorUI extends MetalLabelUI implements Cl
 
             Component source = e.getComponent();
             if (!source.isOpaque()) {
-                labelBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER));
+                lineBorder.setLineColor(UIManager.getColor(MyDoggyKeySpace.TWRA_MOUSE_OUT_BORDER));
                 SwingUtil.repaint(source);
             }
         }
